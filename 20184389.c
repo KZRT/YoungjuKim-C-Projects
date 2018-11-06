@@ -89,7 +89,7 @@ void sort_name(STATEMENT stc_ary[10], int T){
 STATEMENT stscan(){
 	STATEMENT temp={0};
 	printf("이름을 입력하십시오: ");
-	scanf("%s", temp.name);
+	scanf(" %[^\n]s", temp.name);
 	printf("생년월일을 입력하십시오(년, 월, 일 순서 / 빈칸으로 구분): ");
 	scanf("%d", &temp.birthday.year);
 	scanf("%d", &temp.birthday.month);
